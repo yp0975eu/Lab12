@@ -118,6 +118,7 @@ public class Essential3 {
          //return to main and exit
          return;
     }
+    // get user selection
     private int getUserSelection(){
         printMenu();
         while ( !scanner.hasNextInt() ){
@@ -126,6 +127,7 @@ public class Essential3 {
         }
         return scanner.nextInt();
     }
+    // print options menu
     private void printMenu(){
         System.out.println("Enter your selection.");
         System.out.println("1. Add New Solver");
@@ -133,6 +135,7 @@ public class Essential3 {
         System.out.println("3. Show Table");
         System.out.println("4. Quit");
     }
+    // get info for adding new database entry
     private void getSolverInfo(){
         String name = getStringWithScanner("Enter name of solver");
         double solveTime = getDoubleWithScanner("Enter solve time");
